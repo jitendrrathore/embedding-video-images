@@ -1,0 +1,244 @@
+body{
+  margin: 0;
+  color: rgb(20, 40, 50);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: 65px;
+  background-color: #EEF1F2;
+  z-index: 1;
+}
+.ribbon {
+  width: 100%;
+  height: 4px;
+  background-image: linear-gradient(to right,#73D2F6,#08C 22%,#7FC400 36%,#FFD583 48%,#FFB21E 63%,#FF4D4D 76%,#503873);
+}
+.logo{
+  float: left;
+  width: 110px;
+  margin-left: 25px;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  color: #607680;
+  float: left;
+}
+nav ul li{
+  margin-right: 20px;
+  position: relative;
+  top: 8px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #607680;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: #1a2e3b;
+}
+.search {
+  float: right;
+  margin: 15px 30px 0 0;
+}
+.searchBox {
+  border: 1px solid #D0D8DB;
+  width: 250px;
+  height: 32px;
+  padding: 0 0 0 10px
+}
+.searchBox:focus{
+  outline: none;
+}
+.searchIcon  {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 3px;
+  right: 25px;
+}
+button{
+  color: #FFF;
+  background-color: #00ADEF;
+  height: 32px;
+  width: 80px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:focus{
+  outline: none;
+}
+button:hover{
+  background-color: #109DCF;
+}
+#video{
+  margin-top: 57px;
+  background-color: #000;
+}
+#video iframe{
+  width: 100%;
+  height: 60%;
+  border:none;
+}
+#details{
+  width: 40%;
+  margin-left: 280px;
+  float: left;
+}
+#details h1{
+  font-weight: 500;
+  font-size: 36px;
+}
+#details p{
+  color: rgb(120, 140, 150);
+  font-size: 15px;
+}
+#details a{
+  text-decoration: none;
+  color: rgb(20, 40, 50);
+}
+#details a img, #comments img{
+  width: 32px;
+  border-radius: 50%;
+}
+#details a span{
+  text-decoration: none;
+  position: relative;
+  bottom: 8px;
+  left: 4px;
+  color: rgb(20, 40, 50);
+}
+#details button{
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+}
+#related{
+  width: 40%;
+  float: right;
+}
+#related h3{
+  font-weight: 400;
+  margin-left: 20px;
+}
+#related div{
+  display: flex;
+  margin:0 0 20px 20px;
+  cursor: pointer;
+}
+#related div img{
+  width: 120px;
+  display: flex;
+}
+#related div p{
+  margin: 15px;
+}
+#related div p span{
+  font-weight: 600;
+  font-size: 15px;
+  color: #8498A4;
+}
+#related div a{
+  text-decoration: none;
+  color: rgb(20, 40, 50);
+  margin-left: 15px;
+}
+#comments{
+  width: 40%;
+  margin-left: 280px;
+  float: left
+}
+#comments hr{
+  margin-left: 60px;
+  width: 91%;
+  border: none;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+#comments h3{
+  font-weight: 400;
+}
+#comments p{
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+}
+#comments p textarea{
+   border-radius: 2px;
+   height: 55px;
+   width: 94%;
+   padding: 10px;
+}
+#footer{
+  margin-top: 800px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  font-size: 12px;
+}
+#footer p a{
+  color: rgb(20, 40, 50);
+}
+
+@media screen and (max-width: 1500px) {
+  #comments{
+    margin-left: 200px;
+  }
+  #details{
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #comments{
+    margin-left: 120px;
+  }
+  #details{
+    margin-left: 120px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #comments{
+    margin-left: 40px;
+  }
+  #details{
+    margin-left: 40px;
+  }
+  #details h1{
+    font-size: 30px;
+  }
+  .searchBox {
+    display: none;
+  }
+  .searchIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 710px) {
+  #related{
+    width: 80%;
+    float: left;
+    margin-left: 50px;
+  }
+  #comments{
+    width: 80%;
+    margin-left: 50px;
+  }
+  #details{
+    width: 80%;
+    margin-left: 50px;
+  }
+  nav ul{
+    display: none;
+}
+  #video iframe{
+    height: 40%;
+  }
+  #footer{
+    margin-top: 1200px;
+  }
+}
